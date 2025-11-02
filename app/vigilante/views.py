@@ -49,7 +49,7 @@ def normalizar_placa(placa_raw):
     elif len(placa) == 6 and re.match(r'^[A-Z]{3}[0-9]{2}[A-Z]$', placa):
         return f"{placa[:3]}-{placa[3:]}", "Moto"
 
-    raise ValueError("Formato de placa inválido. Use AAA123 (carro) o AAA12A (moto).")
+    raise ValueError(" Formato de placa inválido. Use AAA123 (carro) o AAA12A (moto).")
 
 
 @rol_requerido([4])
