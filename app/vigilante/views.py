@@ -91,7 +91,7 @@ def registrar_parqueadero(request):
             if detalle and detalle.cod_usuario and detalle.cod_usuario.correo:
                 try:
                     send_mail(
-                        subject="Nuevo visitante registrado - Altos de Fontibón",
+                        subject=" Nuevo visitante registrado - Altos de Fontibón",
                         message=(
                             f"Estimado(a) {detalle.cod_usuario.nombres},\n\n"
                             f"Se ha registrado un visitante para su apartamento {visitante.apartamento}, Torre {visitante.torre}.\n\n"
