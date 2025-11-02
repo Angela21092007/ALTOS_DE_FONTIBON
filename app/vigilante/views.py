@@ -114,7 +114,7 @@ def registrar_parqueadero(request):
                 parqueadero_default.estado = True
                 parqueadero_default.save()
             else:
-                messages.error(request, "No hay parqueadero disponible.")
+                messages.error(request, " No hay parqueadero disponible.")
                 return redirect('registrar_detalle_parqueadero')
 
             DetallesParqueadero.objects.create(
